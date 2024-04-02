@@ -1,16 +1,16 @@
-import {StyleProp, ViewStyle} from "react-native";
-import { SvgXml } from "react-native-svg";
+import { StyleProp, ViewStyle } from 'react-native';
+import { SvgXml } from 'react-native-svg';
 
-export function PlanetIcon({style}: {style?: StyleProp<ViewStyle>}) {
-    return (
-        <SvgXml
-            style={style}
-            xml={`
-                <svg xmlns="http://www.w3.org/2000/svg" width="36.42" height="39.461" viewBox="0 0 36.42 39.461">
+export function PlanetIcon({ style }: { style?: StyleProp<ViewStyle> }) {
+  return (
+    <SvgXml
+      style={style}
+      xml={`
+                <svg xmlns="http://www.w3.org/2000/svg" width="36.8" height="39.8" viewBox="0 0 36.8 39.8">
                     <path data-name="Path 6360" d="M2217.048 1888.151c2.7 2.182 3.742 3.643 3.447 4.3-.336.743-2.8.425-6.327-.672a9.346 9.346 0 1 0-16.623-7.522c-3.154-1.928-5.016-3.567-4.68-4.31.3-.652 1.825-.86 5.5-.245-5.353-1.8-9.188-2.42-9.667-1.362-.733 1.619 6.676 6.554 16.549 11.022s18.47 6.777 19.2 5.157c.483-1.063-2.512-3.535-7.399-6.368zm-8.128-8.924a8.229 8.229 0 0 0-9.248 6.212l-.866-.485a8.228 8.228 0 0 1 14.991-3.089 8.2 8.2 0 0 0-4.877-2.638z" transform="rotate(-51.98 -799.795 3197.087)" style="fill:#ea8724"/>
                     <path data-name="Path 6361" d="M2212.672 1903.256a8.208 8.208 0 0 0 1.319 3.863 8.236 8.236 0 0 1-2.006-4.22c-.48-.252-.951-.5-1.407-.752a9.343 9.343 0 0 0 14.92 6.752c-2.348-.856-4.918-1.9-7.581-3.109a116.846 116.846 0 0 1-5.245-2.534z" transform="rotate(-51.98 -808.826 3218.255)" style="fill:#ea8724"/>
                 </svg>
             `}
-      />
-    )
+    />
+  );
 }
