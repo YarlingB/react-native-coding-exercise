@@ -1,18 +1,15 @@
-import { FC } from "react";
-import {StyleSheet, View} from "react-native";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { Fonts } from "../../constants";
+import { FC } from 'react';
+import { View } from 'react-native';
 
-
+import { styles } from './headerStyles';
+import { AppLogo, PlanetIcon, RocketIcon } from '../../assets/vector';
 
 export const RootHeader: FC = () => {
-    const insets = useSafeAreaInsets();
-
-
-    return (
-        <View >
-        </View>
-    );
+  return (
+    <View style={[styles.wrapper]}>
+      <PlanetIcon style={[styles.planetIcon]} />
+      <AppLogo style={[styles.appLogo]} />
+      <RocketIcon style={[styles.rocketIcon]} />
+    </View>
+  );
 };
-
-const styles = StyleSheet.create({ });
